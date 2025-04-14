@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>INSIDAZ | Gaming Clan</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Rye&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -39,29 +39,33 @@
     nav a:hover {
       color: #ff1a1a;
     }
+    .section {
+      display: none;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .visible {
+      display: block !important;
+    }
     .hero {
-      background-image: url('A_website_homepage_screenshot_for_a_gaming_clan_IN.png');
+      background-image: url('https://raw.githubusercontent.com/InsidazScotch/Insidaz/92bb07a8e87cfa0ddb7153b15eed8db12289bd45/A_website_homepage_screenshot_for_a_gaming_clan_IN.png');
       background-size: cover;
       background-position: center;
       padding: 120px 20px;
       text-align: center;
+      color: white;
     }
     .hero h2 {
-      font-size: 3em;
+      font-size: 4em;
       color: #ff1a1a;
       margin-bottom: 20px;
       text-shadow: 2px 2px 4px #000;
     }
     .hero p {
       font-size: 1.3em;
-      color: #eee;
       max-width: 700px;
       margin: 0 auto;
       text-shadow: 1px 1px 2px #000;
-    }
-    section {
-      padding: 80px 20px;
-      text-align: center;
     }
     footer {
       text-align: center;
@@ -109,6 +113,17 @@
       font-size: 1.1em;
       line-height: 1.6;
     }
+    #about, .members, .hero p {
+      font-family: 'Rye', cursive;
+    }
+    .homepage-text {
+      font-family: 'Rye', cursive;
+      font-size: 1.3em;
+      color: #eee;
+      max-width: 700px;
+      margin: 20px auto;
+      text-shadow: 1px 1px 2px #000;
+    }
   </style>
 </head>
 <body>
@@ -117,48 +132,57 @@
   </header>
 
   <nav>
-    <a href="#">Home</a>
-    <a href="#about">About</a>
-    <a href="#downloads">Downloads</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#join">Join Us</a>
+    <a href="javascript:void(0);" onclick="showSection('home')">Home</a>
+    <a href="javascript:void(0);" onclick="showSection('about')">About</a>
+    <a href="javascript:void(0);" onclick="showSection('downloads')">Downloads</a>
+    <a href="javascript:void(0);" onclick="showSection('gallery')">Gallery</a>
+    <a href="javascript:void(0);" onclick="showSection('join')">Join Us</a>
+    <a href="javascript:void(0);" onclick="showSection('members')">Our Legends</a>
   </nav>
 
-  <section class="hero">
-    <h2>INSIDAZ</h2>
-    <p>United by skill, forged in battle.<br>
-    The original America's Army elite squad.<br><br>
-    🇩🇪 TWL 4v4 European Champions<br>
-      
-      <p>INSIDAZ ist nicht nur ein Clan – es ist ein Erbe. Geboren aus den goldenen Tagen von America's Army, stehen wir für Teamgeist, Taktik und unaufhaltsamen Kampfgeist. Die Legende lebt weiter.</p>
-    
-      <p>Leader - <strong>$c0tcH</strong></p>
-  </section>
+  <div id="home" class="section visible">
+    <div class="hero">
+      <h2>INSIDAZ</h2>
+      <p>United by skill, forged in battle.<br>
+        The original America's Army elite squad.<br><br>
+        🇩🇪 TWL 4v4 European Champions<br>
+        Leader <strong>$c0tcH</strong></p>
+      <p class="homepage-text">
+        INSIDAZ ist nicht nur ein Clan – es ist ein Erbe. Geboren aus den goldenen Tagen von <em>America's Army</em>,
+        stehen wir für Teamgeist, Taktik und unaufhaltsamen Kampfgeist. Die Legende lebt weiter.
+      </p>
+    </div>
+  </div>
 
-  <section id="about">
+  <section id="about" class="section">
     <h2 style="color: #ff1a1a; font-size: 2.5em; margin-bottom: 20px;">About Us</h2>
-
-    <!-- English Text -->
     <div style="max-width: 800px; margin: 0 auto; font-size: 1.2em; color: #ccc; line-height: 1.6;">
-      <p>Founded in the golden era of <strong>America's Army</strong>, <span style="color: #ff1a1a;"><strong>INSIDAZ</strong></span> became one of the most feared and respected clans in the European scene.</p>
-      <p>Under the leadership of <strong>$c0tcH</strong>, we dominated the <span style="color: #ff1a1a;"><strong>TWL 4vs4 ladder</strong></span>, clinching the <strong>European Championship</strong> title and leaving a trail of fallen opponents across Germany and beyond.</p>
+      <p>Founded in the golden era of <strong>America's Army</strong>, <strong style="color: #ff1a1a;">INSIDAZ</strong> became one of the most feared and respected clans in the European scene.</p>
+      <p>Under the leadership of <strong>$c0tcH</strong>, we dominated the <strong style="color: #ff1a1a;">TWL 4vs4 ladder</strong>, clinching the <strong>European Championship</strong> title and leaving a trail of fallen opponents across Germany and beyond.</p>
       <p>We weren’t just gamers – we were brothers. Tactical, disciplined, and deadly. Today, we revive the spirit of those days – not to relive the past, but to honor it. Never Forget 2000-2003</p>
     </div>
-
-    <!-- German Text -->
     <div style="max-width: 800px; margin: 0 auto; font-size: 1.2em; color: #ccc; line-height: 1.6;">
       <p><strong>!n$!d4Z (INSIDAZ)</strong> war mehr als nur ein Clan – wir waren eine Legende in der Welt von <strong>America's Army</strong>.</p>
       <p>Gegründet in den goldenen Tagen des taktischen Shooters, haben wir durch <strong>Teamgeist, Disziplin und unaufhaltsamen Skill</strong> die europäische Szene geprägt wie kaum ein anderer.</p>
       <p><strong>2003</strong> trugen wir stolz den Titel <span style="color: #ff1a1a;"><strong>Teamwarfare League 4vs4 European Champions</strong></span> – ein Meilenstein, der unseren Namen für immer in der AA-Geschichte verewigt hat.</p>
       <p>Unsere Stärke lag in der <strong>präzisen Koordination, taktischem Denken</strong> und einer kompromisslosen <strong>Siegesmentalität</strong>. Gegner wussten: Wenn !n$!d4Z im Server war, wird es kein Spaziergang.</p>
       <p>Heute leben wir das Vermächtnis weiter – als Hommage an die glorreichen Tage und als Zeichen dafür, dass Legenden niemals sterben.</p>
-      <p class="signature">– $c0tcH, Clanleader</p>
-      <br><br>
+      <p class="signature">– $c0tcH, Clanleader</p><br><br>
       <em>INSIDAZ forever. 🛡️🇩🇪</em>
     </div>
   </section>
 
-  <section id="join">
+  <section id="downloads" class="section">
+    <h2 style="color: #ff1a1a;">Downloads</h2>
+    <p>Coming soon: classic AA maps, configs, and media. Stay tuned.</p>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2 style="color: #ff1a1a;">Gallery</h2>
+    <p>Screenshots and throwbacks coming soon.</p>
+  </section>
+
+  <section id="join" class="section">
     <h2 style="color: #ff1a1a; font-size: 2.5em; margin-bottom: 20px;">Join Us</h2>
     <p style="max-width: 800px; margin: 0 auto; font-size: 1.2em; color: #ccc; line-height: 1.6;">
       Ready to join the INSIDAZ legacy? Become part of the community and show what you've got!
@@ -166,27 +190,36 @@
     <a href="https://steamcommunity.com/groups/thainsidaz" target="_blank" class="join-button">Join the INSIDAZ Steam Group</a>
   </section>
 
-  <section class="members" id="members">
+  <section id="members" class="members section">
     <h3>Our Legends</h3>
-    <p>INSIDAZ isn't just a name, it's a legacy. We remember our roots, the players who shaped our legacy, and our dominance in America's Army.</p>
+    <p>INSIDAZ isn't just a name, it's a legacy...</p>
     <ul>
-       <li><span style="color: #ff1a1a;"><strong>Scotch</strong></span> – Clanleader , Tactical Head & Pipeline Legend</li>
-      <li><span style="color: #ff1a1a;"><strong>Daywalker</strong></span> – Teamplayer and Hearth of a Lion</li>
-      <li><span style="color: #ff1a1a;"><strong>Tornado</strong></span> – Tactical Genius & Unstoppable Force</li>
-      <li><span style="color: #ff1a1a;"><strong>Phantom</strong></span> – The Silent Assassin</li>
-      <li><span style="color: #ff1a1a;"><strong>CorpeX</strong></span> – Strategic Mastermind</li>
-      <li><span style="color: #ff1a1a;"><strong>Greenvirus</strong></span> – The King of Mountain Ambush</li>
-      <li><span style="color: #ff1a1a;"><strong>2stoned</strong></span> – The Stoner</li>
-      <li><span style="color: #ff1a1a;"><strong>Marax</strong></span> – The Unpredictable</li>
-      <li><span style="color: #ff1a1a;"><strong>2Help</strong></span> – Our Support</li>
-      <li><span style="color: #ff1a1a;"><strong>Sleeper</strong></span> – Our Teamplayer and Silent Killer</li>
-      <li><span style="color: #ff1a1a;"><strong>Killerdog</strong></span> – The KillerDOG!</li>
+      <li><strong style="color:#ff1a1a;">Scotch</strong> – Clanleader , Tactical Head & Pipeline Legend</li>
+      <li><strong style="color:#ff1a1a;">Daywalker</strong> – Teamplayer and Hearth of a Lion</li>
+      <li><strong style="color:#ff1a1a;">Tornado</strong> – Tactical Genius & Unstoppable Force</li>
+      <li><strong style="color:#ff1a1a;">Phantom</strong> – The Silent Assassin</li>
+      <li><strong style="color:#ff1a1a;">CorpeX</strong> – Strategic Mastermind</li>
+      <li><strong style="color:#ff1a1a;">Greenvirus</strong> – The King of Mountain Ambush</li>
+      <li><strong style="color:#ff1a1a;">2stoned</strong> – The Stoner</li>
+      <li><strong style="color:#ff1a1a;">Marax</strong> – The Unpredictable</li>
+      <li><strong style="color:#ff1a1a;">2Help</strong> – Our Support</li>
+      <li><strong style="color:#ff1a1a;">Sleeper</strong> – Our Teamplayer and Silent Killer</li>
+      <li><strong style="color:#ff1a1a;">Killerdog</strong> – The KillerDOG!</li>
     </ul>
-    <p>And many more legends who fought side-by-side to make INSIDAZ the powerhouse it was.</p>
+    <p>And many more legends who fought side-by-side to make INSIDAZ the powerhouse it was</p>
   </section>
 
   <footer>
-    &copy; 2025 INSIDAZ Gaming Clan | Powered by Nostalgia & Brotherhood | All Rights Reserved
+    <p>&copy; 2025 INSIDAZ Gaming Clan | Powered by Nostalgia & Brotherhood | All Rights Reserved</p>
   </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(section => {
+        section.classList.remove('visible');
+      });
+      document.getElementById(id).classList.add('visible');
+    }
+  </script>
 </body>
 </html>
